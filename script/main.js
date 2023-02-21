@@ -1,7 +1,7 @@
 // Import the data to customize and insert them into page
 const fetchData = () => {
-//   var x = document.getElementById("myAudio");
-//   x.play();
+  var audio = new Audio("audio.mp3");
+  audio.play();
   fetch("customize.json")
     .then((data) => data.json())
     .then((data) => {
